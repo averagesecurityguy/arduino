@@ -1,3 +1,6 @@
+/*
+Use PWM to make an LED get brighter then get dimmer.
+*/
 const int LED = 9;
 const int SENSOR = 0;
 

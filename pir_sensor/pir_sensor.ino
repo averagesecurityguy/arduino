@@ -1,3 +1,7 @@
+/*
+Use a PIR sensor, motion detector, to turn on an LED.
+*/
+
 // Declare constants
 const int PIR = 12;
 const int LED = 2;

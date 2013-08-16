@@ -1,4 +1,10 @@
-// Declare constants
+// This sketch uses four LEDs to count to visually
+// count from 0 to 15. Each time a button is pushed
+// the counter increases and displays the number in
+// binary by lighting up the appropriate LED. Once the
+// counter hits 16 it is reset to 0.
+
+// Declare pins for the four LEDs and the button.
 const byte ONE = 12;
 const byte TWO = 10;
 const byte FOUR = 8;
@@ -35,6 +41,8 @@ boolean read_button(const byte *button, byte *old) {
   return pushed;
 }
 
+// Use div and mod to determine which LEDs should be on and light
+// them up.
 void write_number(byte c) {
   digitalWrite(EIGHT, c / 8);
   c = c % 8;
@@ -45,7 +53,9 @@ void write_number(byte c) {
   digitalWrite(ONE, c);
 }
 
-// Run this thing.
+// Run the main loop. Check for a button push. If the button is pushed
+// update the counter. If the counter goes to 16 reset it to zero.
+// Finally, display the value on the LEDs.
 void loop() {
   boolean val = read_button(&BUTTON, &bval);
   if (val) { counter++; }

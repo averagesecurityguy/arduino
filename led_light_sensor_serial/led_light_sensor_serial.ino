@@ -1,3 +1,7 @@
+/*
+This is almost the same code base as led_light_sensor but we
+use the serial interface to monitor the sensor and LED values.
+*/
 const int LED = 9;
 const int SENSOR = 0;
 

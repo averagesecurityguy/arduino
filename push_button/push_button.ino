@@ -1,3 +1,8 @@
+/*
+Build and test a generic read button function.
+This function is used in multiple_push_button.
+*/
+
 // Declare constants
 const int LED = 13;
 const int BUTTON = 7;

@@ -1,3 +1,8 @@
+/*
+Testing out a single read_button function that can read
+multiple buttons.
+*/
+
 // Declare constants
 const int RLED = 4;
 const int RBUTTON = 8;
